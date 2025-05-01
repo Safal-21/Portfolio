@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Safal Adhikari Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    /* Custom fade-in animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animate-fadeIn {
+      animation: fadeIn 1s ease-out forwards;
+    }
+  </style>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body class="mx-my-10">
+
+  <!-- Navigation -->
+  <nav class="flex justify-between items-center py-5 text-white w-full z-20 px-6 md:px-10 fixed top-0 bg-black bg-opacity-70">
+    <div class="text-2xl font-bold">Safal Adhikari</div>
+    <!-- desktop menu -->
+    <ul class="hidden md:flex space-x-6">
+      <li><a href="#home" class="hover:text-purple-400">Home</a></li>
+      <li><a href="#about" class="hover:text-purple-400">About</a></li>
+      <li><a href="#projects" class="hover:text-purple-400">Projects</a></li>
+      <li><a href="#contact" class="hover:text-purple-400">Contact</a></li>
+      <li class="flex space-x-4 px-7">
+        <a href="https://dribbble.com/safaladhi" target="_blank" class="hover:text-pink-500">
+          <i class="fab fa-dribbble text-xl"></i>
+        </a>
+        <a href="https://www.behance.net/safaladhikari" target="_blank" class="hover:text-blue-500">
+          <i class="fab fa-behance text-xl"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/safal-adhikari-5899402b0/" target="_blank" class="hover:text-blue-700">
+          <i class="fab fa-linkedin text-xl"></i>
+        </a>
+      </li>
+      <li>
+        <a href="safal-resume.pdf" class="border border-white px-4 py-2 rounded-full hover:bg-purple-700 transition">
+          Download CV
+        </a>
+      </li>
+    </ul>
+
+    <!-- mobile hamburger -->
+    <button id="menu-toggle" class="md:hidden text-2xl">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+
+  <!-- mobile menu overlay -->
+  <div id="mobile-menu" class="fixed inset-0 hidden bg-white z-30">
+    <div class="flex flex-col items-center justify-center h-full space-y-6">
+      <a href="#home" class="text-2xl font-medium text-black hover:text-purple-600">Home</a>
+      <a href="#about" class="text-2xl font-medium text-black hover:text-purple-600">About</a>
+      <a href="#projects" class="text-2xl font-medium text-black hover:text-purple-600">Projects</a>
+      <a href="#contact" class="text-2xl font-medium text-black hover:text-purple-600">Contact</a>
+      <div class="flex space-x-6 mt-4">
+        <a href="https://dribbble.com/SafalAdhikari" target="_blank" class="text-2xl text-black hover:text-pink-600">
+          <i class="fab fa-dribbble"></i>
+        </a>
+        <a href="https://www.instagram.com/yourusername" target="_blank" class="text-2xl text-black hover:text-pink-600">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.behance.net/SafalAdhikari" target="_blank" class="text-2xl text-black hover:text-indigo-600">
+          <i class="fab fa-behance"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/safal-adhikari-68b509274/" target="_blank" class="text-2xl text-black hover:text-blue-700">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+      <a
+        href="/path-to-cv.pdf"
+        class="mt-6 px-6 py-3 bg-black text-white rounded-full hover:bg-gray-800 transition"
+      >
+        Download CV
+      </a>
+      <button id="close-menu" class="absolute top-6 right-6 text-3xl text-black">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+  </div>
+
+
+  <!-- Hero Section -->
+  <section id="home" class="flex flex-col items-start justify-center h-screen px-10 bg-black">
+    <h1 class="text-9xl font-medium">Hello 👋<br> Safal Here!</h1>
+    <p class="text-xl text-gray-300 mt-4">I am a creative UI/UX designer based in Kathmandu, Nepal.</p>
+  </section>
+
+  <!-- Parallax Section with Unsplash Image -->
+  <section id="parallax" class="relative h-screen bg-fixed bg-center bg-cover filter grayscale" style="background-image: url('images/1.jpg');">
+    <!-- Dark overlay for contrast -->
+    <div class="absolute inset-0 bg-black opacity-60"></div>
+    </div>
+  </section>
+
+ <!-- About Section -->
+<section id="about" class="relative py-20 overflow-hidden" style="background: #0B0B0B;">
+  <div class="container mx-auto px-4 flex flex-col items-center text-center">
+      <!-- Title -->
+      <h2 class="text-3xl md:text-5xl font-semibold text-transparent bg-clip-text bg-white  mb-6 animate-fadeIn">
+          About Me
+      </h2>
+      
+      <!-- Text Content -->
+      <div class="max-w-4xl">
+          <p class="text-lg md:text-2xl text-gray-300 leading-relaxed animate-fadeIn">
+              Hi! I'm <span class="font-bold text-white">Safal Adhikari</span>, a passionate UI/UX designer from Kathmandu, Nepal. My journey in design started with a curiosity for technology, which turned into a deep love for creating meaningful user experiences.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+              <div class="p-6 border border-gray-700 rounded-lg bg-gray-900 shadow-lg animate-fadeIn">
+                  <h3 class="text-xl font-semibold text-white">Creative Approach</h3>
+                  <p class="text-gray-400 mt-2">I believe in simplicity, elegance, and innovation to create user-friendly experiences.</p>
+              </div>
+              <div class="p-6 border border-gray-700 rounded-lg bg-gray-900 shadow-lg animate-fadeIn">
+                  <h3 class="text-xl font-semibold text-white">Attention to Detail</h3>
+                  <p class="text-gray-400 mt-2">From wireframes to final designs, I ensure every pixel has a purpose.</p>
+              </div>
+          </div>
+          <p class="text-lg md:text-xl text-gray-400 mt-6 animate-fadeIn">
+              Whether it's a mobile app or a website, my goal is to design digital experiences that are intuitive, beautiful, and impactful. Let's connect and create something amazing together!
+          </p>
+      </div>
+  </div>
+</section>
+
+  
+  
+
+<!-- Projects Section -->
+<section id="projects" class="py-20 relative overflow-hidden" >
+    <div class="container mx-auto px-4">
+      <!-- Section Title -->
+      <h2 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-white text-center mb-12 animate-fadeIn">
+        Projects
+      </h2>
+  
+      <p class="text-xl text-gray-300 text-center max-w-3xl mx-auto mb-16 leading-relaxed animate-fadeIn">
+        Here are a few projects I've worked on that showcase my creativity and technical skills. Each one reflects my passion for design, innovation, and problem-solving.
+      </p>
+  
+      <div class="mx-10 grid gap-8 grid-cols-1 md:grid-cols-2">
+        <!-- Project Card 1 -->
+        <div class="group relative overflow-hidden rounded-lg shadow-xl transition-transform duration-300 hover:scale-105 hover:ring-4 hover:ring-indigo-500">
+          <img src="images/Frame-1.png" alt="Project 1" class="w-full h-80 object-cover" style="height: 550px;">
+          <div class="absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            <h3 class="text-white text-3xl font-bold mb-2">Dental Website</h3>
+            
+            <a href="dental.html" class="mt-4 px-6 py-2 border border-white text-white hover:bg-white hover:text-black transition-colors duration-300">View Details</a>
+          </div>
+        </div>
+  
+        <!-- Project Card 2 -->
+        <div class="group relative overflow-hidden rounded-lg shadow-xl transition-transform duration-300 hover:scale-105 hover:ring-4 hover:ring-indigo-500">
+          <img src="images/agency.webp" alt="Project 2" class="w-full h-64 object-cover" style="height: 550px;">
+          <div class="absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            <h3 class="text-white text-3xl font-bold mb-2">Agency Website</h3>
+            <a href="agency.html" class="mt-4 px-6 py-2 border border-white text-white hover:bg-white hover:text-black transition-colors duration-300">View Details</a>
+          </div>
+        </div>
+  
+        <!-- Project Card 3 -->
+        <div class="group relative overflow-hidden rounded-lg shadow-xl transition-transform duration-300 hover:scale-105 hover:ring-4 hover:ring-indigo-500">
+          <img src="images/animal.webp" alt="Project 3" class="w-full h-64 object-cover" style="height: 550px;">
+          <div class="absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            <h3 class="text-white text-3xl font-bold mb-2">Landing Page</h3>
+            
+            <a href="#" class="mt-4 px-6 py-2 border border-white text-white hover:bg-white hover:text-black transition-colors duration-300">View Details</a>
+          </div>
+        </div>
+  
+        <!-- Project Card 4 -->
+        <div class="group relative overflow-hidden rounded-lg shadow-xl transition-transform duration-300 hover:scale-105 hover:ring-4 hover:ring-indigo-500">
+          <img src="images/Frame 26.png" alt="Project 4" class="w-full h-64 object-cover" style="height: 550px;">
+          <div class="absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            <h3 class="text-white text-3xl font-bold mb-2">Travel App</h3>
+            
+            <a href="#" class="mt-4 px-6 py-2 border border-white text-white hover:bg-white hover:text-black transition-colors duration-300">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Decorative Background Elements -->
+    <div class="absolute top-10 left-10 w-32 h-32 bg-indigo-500 rounded-full opacity-20 blur-3xl"></div>
+    <div class="absolute bottom-10 right-10 w-48 h-48 bg-pink-500 rounded-full opacity-20 blur-3xl"></div>
+  </section>
+
+
+<!-- Services Section -->
+<section id="services" class="py-20 bg-black relative overflow-hidden">
+    <div class="container mx-auto px-16">
+      <!-- Section Title -->
+      <h2 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-white text-center mb-12 animate-fadeIn">
+        Services I Provide
+      </h2>
+  
+      <p class="text-xl text-gray-300 text-center max-w-3xl mx-auto mb-16 leading-relaxed animate-fadeIn">
+        Transforming your ideas into digital masterpieces. Here are the services I specialize in.
+      </p>
+  
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <!-- Web Design Service -->
+        <div class="text-center p-8 rounded-lg " style="background: #101010;">
+          <div class="bg- inline-block p-6 rounded-full mb-4">
+            <!-- Web Design Icon -->
+            <i class="fas fa-desktop text-4xl text-purple-600"></i>
+          </div>
+          <h3 class="text-2xl font-semibold text-white mb-2">Web Design</h3>
+          <p class="text-small" style="color: rgb(108, 108, 108);">Crafting responsive and modern websites with an emphasis on user experience and functionality.</p>
+        </div>
+  
+        <!-- App Design Service -->
+        <div class="text-center p-8 rounded-lg" style="background: #101010;">
+          <div class=" inline-block p-6 rounded-full mb-4">
+            <!-- App Design Icon -->
+            <i class="fas fa-mobile-alt text-4xl text-purple-600"></i>
+          </div>
+          <h3 class="text-2xl font-semibold text-white mb-2">App Design</h3>
+          <p class="text-small" style="color: rgb(108, 108, 108);">Designing sleek and intuitive mobile apps that deliver outstanding user experiences.</p>
+        </div>
+  
+        <!-- Dashboard Design Service -->
+        <div class="text-center p-8 rounded-lg" style="background: #101010;">
+          <div class=" inline-block p-6 rounded-full mb-4">
+            <!-- Dashboard Design Icon -->
+            <i class="fas fa-tachometer-alt text-4xl text-purple-600"></i>
+          </div>
+          <h3 class="text-2xl font-semibold text-white mb-2">Dashboard Design</h3>
+          <p class="text-small" style="color: rgb(108, 108, 108);">Designing efficient and data-driven dashboards to help businesses make informed decisions.</p>
+        </div>
+  
+        <!-- Prototype Design Service -->
+        <div class="text-center p-8 rounded-lg" style="background: #101010;">
+          <div class=" inline-block p-6 rounded-full mb-4">
+            <!-- Prototype Design Icon -->
+            <i class="fas fa-puzzle-piece text-4xl text-purple-600"></i>
+          </div>
+          <h3 class="text-2xl font-semibold text-white mb-2">Prototype Design</h3>
+          <p class="text-small" style="color: rgb(108, 108, 108);">Creating interactive prototypes to visualize and test design concepts before development.</p>
+        </div>
+  
+        <!-- Wireframe Design Service -->
+        <div class="text-center p-8  rounded-lg "style="background: #101010;">
+          <div class=" inline-block p-6 rounded-full mb-4">
+            <!-- Wireframe Design Icon -->
+            <i class="fas fa-sitemap text-4xl text-purple-600"></i>
+          </div>
+          <h3 class="text-2xl font-semibold text-white mb-2">Wireframe Design</h3>
+          <p class="text-small"style="color: rgb(108, 108, 108);">Sketching and building wireframes to define the structure and flow of digital products.</p>
+        </div>
+  
+        <!-- User Research Service -->
+        <div class="text-center p-8 rounded-lg" style="background: #101010;">
+          <div class=" inline-block p-6 rounded-full mb-4">
+            <!-- User Research Icon -->
+            <i class="fas fa-search text-4xl text-purple-600"></i>
+          </div>
+          <h3 class="text-2xl font-semibold text-white mb-2">User Research</h3>
+          <p class="text-small" style="color: rgb(108, 108, 108);">Conducting in-depth user research to understand needs and behaviors for effective solutions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonial Carousel -->
+<div class="relative w-full max-w-2xl mx-auto text-center text-white my-40">
+  <div id="testimonial-container" class="overflow-hidden">
+    <div class="testimonial-slide">
+      <p class="text-4xl">"It was a pleasure working on a design project and I must say that the experience exceeded all my expectations."</p>
+      <h3 class="mt-10  text-2xl"><b>Rojan G Mul</b></h3>
+      <p class=" text-indigo-600">COO,WebX Nepal</p>
+    </div>
+    <div class="testimonial-slide hidden">
+      <p class="text-4xl">"Fantastic collaboration! The design quality and attention to detail were beyond what I imagined."</p>
+      <h3 class="mt-10 text-2xl"><b>Nick Khadka</b></h3>
+      <p class="text-indigo-600">Chronsync Lab</p>
+    </div>
+    <div class="testimonial-slide hidden">
+      <p class="text-4xl">"A truly seamless experience! The project was delivered on time and the results were phenomenal."</p>
+      <h3 class="mt-10 text-2xl"><b>Michael Lee</b></h3>
+      <p class="text-indigo-600">Product Manager</p>
+    </div>
+  </div>
+  
+  <!-- Navigation Arrows -->
+  <button id="prev-btn" class="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 text-white">&#9665;</button>
+  <button id="next-btn" class="absolute right-0 top-1/2 transform -translate-y-1/2 p-2 text-white">&#9655;</button>
+  
+  <!-- Indicators -->
+  <div class="flex justify-center mt-4">
+    <span class="indicator w-3 h-3 mx-1 bg-gray-500 rounded-full"></span>
+    <span class="indicator w-3 h-3 mx-1 bg-gray-500 rounded-full"></span>
+    <span class="indicator w-3 h-3 mx-1 bg-gray-500 rounded-full"></span>
+  </div>
+</div>
+
+<script>
+  let currentIndex = 0;
+  const slides = document.querySelectorAll(".testimonial-slide");
+  const indicators = document.querySelectorAll(".indicator");
+  const totalSlides = slides.length;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle("hidden", i !== index);
+      indicators[i].classList.toggle("bg-teal-400", i === index);
+      indicators[i].classList.toggle("bg-gray-500", i !== index);
+    });
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    showSlide(currentIndex);
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    showSlide(currentIndex);
+  }
+
+  document.getElementById("next-btn").addEventListener("click", nextSlide);
+  document.getElementById("prev-btn").addEventListener("click", prevSlide);
+  setInterval(nextSlide, 5000);
+</script>
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-black relative overflow-hidden">
+  <div class="container mx-auto px-4">
+    <!-- Section Title -->
+    <h2 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-white text-center mb-12 animate-fadeIn">
+      Got Something in Mind? Let's Talk!
+    </h2>
+
+    <p class="text-xl text-gray-300 text-center max-w-3xl mx-auto mb-12 leading-relaxed animate-fadeIn">
+      If you have a project in mind or just want to chat about design, I’m always up for a conversation. Reach out to me, and let's make something amazing together!
+    </p>
+
+    <!-- Contact Options -->
+    <div class="text-center space-y-6">
+      <!-- Gmail Compose Contact -->
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=safaladhi111@gmail.com" target="_blank" class="px-6 py-3 text-white bg-purple-600 hover:bg-indigo-600 rounded-full transition-all duration-300 block w-max mx-auto">
+        Contact Me via Gmail
+      </a>
+
+      <!-- LinkedIn Contact -->
+      <a href="https://www.linkedin.com/in/safal-adhikari-5899402b0" target="_blank" class="px-6 py-3 text-white  border hover:bg-blue-700 rounded-full transition-all duration-300 block w-max mx-auto" style="border-color:purple;">
+        Message Me on LinkedIn
+      </a>
+    </div>
+
+    <!-- Social Links -->
+    <div class="text-center mt-12">
+      <p class="text-xl text-gray-300 mb-4">Connect with me on social media:</p>
+      <div class="flex justify-center space-x-8">
+        <!-- Dribbble Link -->
+        <a href="https://dribbble.com/safaladhi" target="_blank" class="text-3xl text-white hover:text-indigo-500 transition-colors duration-300">
+          <i class="fab fa-dribbble"></i>
+        </a>
+        <!-- Instagram Link -->
+        <a href="https://www.instagram.com/yourusername" target="_blank" class="text-3xl text-white hover:text-pink-500 transition-colors duration-300">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <!-- Behance Link -->
+        <a href="https://www.behance.net/safaladhikari" target="_blank" class="text-3xl text-white hover:text-indigo-500 transition-colors duration-300">
+          <i class="fab fa-behance"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const closeMenu = document.getElementById('close-menu');
+
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.remove('hidden');
+  });
+
+  closeMenu.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+  });
+
+  // Also close when clicking any link
+  document.querySelectorAll('#mobile-menu a').forEach(link =>
+    link.addEventListener('click', () => mobileMenu.classList.add('hidden'))
+  );
+</script>
+
+
+</body>
+</html> 

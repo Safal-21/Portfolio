@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Safal Adhikari Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    /* Custom fade-in animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animate-fadeIn {
+      animation: fadeIn 1s ease-out forwards;
+    }
+  </style>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body class="mx-my-10">
+
+  <!-- Navigation -->
+  <nav class="flex justify-between items-center py-5 text-white w-full z-20 px-6 md:px-10 fixed top-0 bg-black bg-opacity-70">
+    <div class="text-2xl font-bold">Safal Adhikari</div>
+    <!-- desktop menu -->
+    <ul class="hidden md:flex space-x-6">
+      <li><a href="index.html" class="hover:text-purple-400">Home</a></li>
+      <li class="flex space-x-4 px-7">
+        <a href="https://dribbble.com/safaladhi" target="_blank" class="hover:text-pink-500">
+          <i class="fab fa-dribbble text-xl"></i>
+        </a>
+        <a href="https://www.behance.net/safaladhikari" target="_blank" class="hover:text-blue-500">
+          <i class="fab fa-behance text-xl"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/safal-adhikari-5899402b0/" target="_blank" class="hover:text-blue-700">
+          <i class="fab fa-linkedin text-xl"></i>
+        </a>
+      </li>
+      <li>
+        <a href="safal-resume.pdf" class="border border-white px-4 py-2 rounded-full hover:bg-purple-700 transition">
+          Download CV
+        </a>
+      </li>
+    </ul>
+
+    <!-- mobile hamburger -->
+    <button id="menu-toggle" class="md:hidden text-2xl">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+
+  <!-- mobile menu overlay -->
+  <div id="mobile-menu" class="fixed inset-0 hidden bg-white z-30">
+    <div class="flex flex-col items-center justify-center h-full space-y-6">
+      <a href="#home" class="text-2xl font-medium text-black hover:text-purple-600">Home</a>
+      <a href="#about" class="text-2xl font-medium text-black hover:text-purple-600">About</a>
+      <a href="#projects" class="text-2xl font-medium text-black hover:text-purple-600">Projects</a>
+      <a href="#contact" class="text-2xl font-medium text-black hover:text-purple-600">Contact</a>
+      <div class="flex space-x-6 mt-4">
+        <a href="https://dribbble.com/SafalAdhikari" target="_blank" class="text-2xl text-black hover:text-pink-600">
+          <i class="fab fa-dribbble"></i>
+        </a>
+        <a href="https://www.instagram.com/yourusername" target="_blank" class="text-2xl text-black hover:text-pink-600">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.behance.net/SafalAdhikari" target="_blank" class="text-2xl text-black hover:text-indigo-600">
+          <i class="fab fa-behance"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/safal-adhikari-68b509274/" target="_blank" class="text-2xl text-black hover:text-blue-700">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+      <a
+        href="/path-to-cv.pdf"
+        class="mt-6 px-6 py-3 bg-black text-white rounded-full hover:bg-gray-800 transition"
+      >
+        Download CV
+      </a>
+      <button id="close-menu" class="absolute top-6 right-6 text-3xl text-black">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+  </div>
+
+<!-- Header Section -->
+<section class="min-h-screen flex items-center bg- justify-center py-10 my-20 animate-fadeInUp">
+  <div class="w-full mx-auto px-10 grid md:grid-cols-1 gap-4 items-center">
+    <div class="text-center mb-6">
+      <h1 class="text-5xl font-bold gradient-text leading-tight">Creative Agency UI/UX Design</h1>
+    </div>
+    <div class="flex justify-center">
+      <img src="images/agency.webp" alt="Project Image" class="rounded-2xl shadow-lg object-cover w-[1200px] h-[700px]" />
+    </div>
+  </div>
+</section>
+
+ <!-- Project Info Section -->
+<section class="py-12 bg-black animate-fadeInUp">
+  <div class="max-w-7xl mx-auto px-10 grid md:grid-cols-3 gap-10 text-center">
+    <!-- Role Section -->
+    <div class="flex flex-col items-center">
+      <div class="mb-4 text-purple-400">
+        <i class="fas fa-briefcase text-2xl"></i>
+      </div>
+      <h3 class="text-lg font-semibold text-purple-400">Role</h3>
+      <p class="text-gray-300">UI/UX Designer</p>
+    </div>
+
+    <!-- Timeline Section -->
+    <div class="flex flex-col items-center">
+      <div class="mb-4 text-purple-400">
+        <i class="fas fa-calendar-alt text-2xl"></i>
+      </div>
+      <h3 class="text-lg font-semibold text-purple-400">Timeline</h3>
+      <p class="text-gray-300">January - March 2025</p>
+    </div>
+
+    <!-- Tools Section -->
+    <div class="flex flex-col items-center">
+      <div class="mb-4 text-purple-400">
+        <i class="fas fa-tools text-2xl"></i>
+      </div>
+      <h3 class="text-lg font-semibold text-purple-400">Tools</h3>
+      <p class="text-gray-300">Figma, Adobe XD, HTML, CSS</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Overview Section -->
+  <section class="py-16 bg-[#1a1a1a] animate-fadeInUp">
+    <div class="max-w-7xl mx-auto px-10">
+      <h2 class="text-3xl font-bold text-white mb-6 text-center leading-tight">Project Overview</h2>
+      <p class="text-gray-300 leading-relaxed text-center">
+        The Design Agency UI/UX Design focuses on delivering a bold and professional user experience tailored for creative agencies. With a sleek, modern aesthetic, the design aims to reflect innovation, creativity, and reliability. It features intuitive navigation, clean layouts, and visually compelling elements that engage visitors from the first glance. The interface is strategically crafted to highlight services, showcase portfolios, and encourage client interaction through smooth contact and inquiry features. Every detail is designed to establish credibility and turn visitors into long-term clients.
+
+      </div>
+  </section>
+
+<!-- Design Process Section with Scroll Animation (WebxNep style) -->
+<section class="py-24 bg-black text-white relative overflow-hidden" id="process">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center text-white mb-16">Design Process</h2>
+
+    <div class="space-y-20 relative before:absolute before:left-1/2 before:top-0 before:h-full before:w-1 before:bg-gradient-to-b before:from-red-500 before:via-pink-500 before:to-purple-600">
+
+      <!-- Step -->
+      <div class="flex flex-col md:flex-row items-center justify-between gap-10 relative group" data-aos="fade-up">
+        <div class="w-full md:w-1/2 text-right md:pr-16">
+          <h3 class="text-2xl font-semibold">User Research</h3>
+          <p class="text-gray-400 mt-2">Identifying user needs through surveys and interviews.</p>
+        </div>
+        <div class="w-6 h-6 rounded-full bg-red-500 border-4 border-black z-10 absolute left-1/2 transform -translate-x-1/2"></div>
+        <div class="w-full md:w-1/2"></div>
+      </div>
+
+      <!-- Step -->
+      <div class="flex flex-col md:flex-row-reverse items-center justify-between gap-10 relative group" data-aos="fade-up">
+        <div class="w-full md:w-1/2 text-left md:pl-16">
+          <h3 class="text-2xl font-semibold">Personas & Journey Mapping</h3>
+          <p class="text-gray-400 mt-2">Defining key user types and mapping their goals.</p>
+        </div>
+        <div class="w-6 h-6 rounded-full bg-pink-500 border-4 border-black z-10 absolute left-1/2 transform -translate-x-1/2"></div>
+        <div class="w-full md:w-1/2"></div>
+      </div>
+
+      <!-- Step -->
+      <div class="flex flex-col md:flex-row items-center justify-between gap-10 relative group" data-aos="fade-up">
+        <div class="w-full md:w-1/2 text-right md:pr-16">
+          <h3 class="text-2xl font-semibold">Wireframing</h3>
+          <p class="text-gray-400 mt-2">Rapid low-fidelity designs to test early ideas.</p>
+        </div>
+        <div class="w-6 h-6 rounded-full bg-purple-500 border-4 border-black z-10 absolute left-1/2 transform -translate-x-1/2"></div>
+        <div class="w-full md:w-1/2"></div>
+      </div>
+
+      <!-- Step -->
+      <div class="flex flex-col md:flex-row-reverse items-center justify-between gap-10 relative group" data-aos="fade-up">
+        <div class="w-full md:w-1/2 text-left md:pl-16">
+          <h3 class="text-2xl font-semibold">Visual Design</h3>
+          <p class="text-gray-400 mt-2">Applying branding, colors, and typography in Figma.</p>
+        </div>
+        <div class="w-6 h-6 rounded-full bg-blue-600 border-4 border-black z-10 absolute left-1/2 transform -translate-x-1/2"></div>
+        <div class="w-full md:w-1/2"></div>
+      </div>
+
+      <!-- Step -->
+      <div class="flex flex-col md:flex-row items-center justify-between gap-10 relative group" data-aos="fade-up">
+        <div class="w-full md:w-1/2 text-right md:pr-16">
+          <h3 class="text-2xl font-semibold">Prototyping</h3>
+          <p class="text-gray-400 mt-2">Interactive design flows to simulate user experience.</p>
+        </div>
+        <div class="w-6 h-6 rounded-full bg-emerald-500 border-4 border-black z-10 absolute left-1/2 transform -translate-x-1/2"></div>
+        <div class="w-full md:w-1/2"></div>
+      </div>
+
+      <!-- Step -->
+      <div class="flex flex-col md:flex-row-reverse items-center justify-between gap-10 relative group" data-aos="fade-up">
+        <div class="w-full md:w-1/2 text-left md:pl-16">
+          <h3 class="text-2xl font-semibold">User Testing</h3>
+          <p class="text-gray-400 mt-2">Gathering feedback and refining the design accordingly.</p>
+        </div>
+        <div class="w-6 h-6 rounded-full bg-yellow-400 border-4 border-black z-10 absolute left-1/2 transform -translate-x-1/2"></div>
+        <div class="w-full md:w-1/2"></div>
+      </div>
+
+      <!-- Step -->
+      <div class="flex flex-col md:flex-row items-center justify-between gap-10 relative group" data-aos="fade-up">
+        <div class="w-full md:w-1/2 text-right md:pr-16">
+          <h3 class="text-2xl font-semibold">Final Mockups</h3>
+          <p class="text-gray-400 mt-2">Clean and polished high-fidelity designs ready for handoff.</p>
+        </div>
+        <div class="w-6 h-6 rounded-full bg-cyan-400 border-4 border-black z-10 absolute left-1/2 transform -translate-x-1/2"></div>
+        <div class="w-full md:w-1/2"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- AOS animation library -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+
+
+
+  <!-- Full Width Image Section -->
+  <section class="w-full animate-fadeInUp">
+    <div class="flex justify-center space-x-6 py-6">
+      <a href="https://dribbble.com/shots/25820724-Dental-Care-UI-UX-Design" target="_blank" class="text-white text-lg font-semibold border-b-2 border-purple-600 hover:border-purple-700 hover:text-purple-600 transition duration-300">
+        See in Dribbble
+      </a>
+      <a href="https://www.behance.net/yourprofile" target="_blank" class="text-white text-lg font-semibold border-b-2 border-purple-600 hover:border-purple-700 hover:text-purple-600 transition duration-300">
+        See in Behance
+      </a>
+    </div>
+  </div>
+
+  </section>
+
+ <!-- Contact Section -->
+<section id="contact" class="py-20 bg-black relative overflow-hidden">
+  <div class="container mx-auto px-4">
+    <!-- Section Title -->
+    <h2 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-white text-center mb-12 animate-fadeIn">
+      Got Something in Mind? Let's Talk!
+    </h2>
+
+    <p class="text-xl text-gray-300 text-center max-w-3xl mx-auto mb-12 leading-relaxed animate-fadeIn">
+      If you have a project in mind or just want to chat about design, I’m always up for a conversation. Reach out to me, and let's make something amazing together!
+    </p>
+
+    <!-- Contact Options -->
+    <div class="text-center space-y-6">
+      <!-- Gmail Compose Contact -->
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=safaladhi111@gmail.com" target="_blank" class="px-6 py-3 text-white bg-purple-600 hover:bg-indigo-600 rounded-full transition-all duration-300 block w-max mx-auto">
+        Contact Me via Gmail
+      </a>
+
+      <!-- LinkedIn Contact -->
+      <a href="https://www.linkedin.com/in/safal-adhikari-5899402b0" target="_blank" class="px-6 py-3 text-white  border hover:bg-blue-700 rounded-full transition-all duration-300 block w-max mx-auto" style="border-color:purple;">
+        Message Me on LinkedIn
+      </a>
+    </div>
+
+    <!-- Social Links -->
+    <div class="text-center mt-12">
+      <p class="text-xl text-gray-300 mb-4">Connect with me on social media:</p>
+      <div class="flex justify-center space-x-8">
+        <!-- Dribbble Link -->
+        <a href="https://dribbble.com/safaladhi" target="_blank" class="text-3xl text-white hover:text-indigo-500 transition-colors duration-300">
+          <i class="fab fa-dribbble"></i>
+        </a>
+        <!-- Instagram Link -->
+        <a href="https://www.instagram.com/yourusername" target="_blank" class="text-3xl text-white hover:text-pink-500 transition-colors duration-300">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <!-- Behance Link -->
+        <a href="https://www.behance.net/safaladhikari" target="_blank" class="text-3xl text-white hover:text-indigo-500 transition-colors duration-300">
+          <i class="fab fa-behance"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const closeMenu = document.getElementById('close-menu');
+
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.remove('hidden');
+  });
+
+  closeMenu.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+  });
+
+  // Also close when clicking any link
+  document.querySelectorAll('#mobile-menu a').forEach(link =>
+    link.addEventListener('click', () => mobileMenu.classList.add('hidden'))
+  );
+</script>
+
+   
+
+</body>
+
+</html>
